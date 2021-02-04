@@ -1,7 +1,7 @@
 let http = require("http");
 let fs = require('fs')
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 8080;
 
 http.createServer(function (request, response) {
     // Send the HTTP header
