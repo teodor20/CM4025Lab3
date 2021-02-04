@@ -10,6 +10,17 @@ app.get('/', function(req, res) {
  res.sendFile(__dirname + '/index.html');
 });
 
+app.route('/login')
+// show the form (GET http://localhost:PORT/login)
+.get(function(req, res) {
+res.send('this is the login form');
+})
+// process the form (POST http://localhost:PORT/login)
+.post(function(req, res) { console.log('processing');
+res.send('processing the login form!');
+});
+
+
 ///////////////////////////////////////////////////////////////////
 // create routes for the admin section
 //get an instance of the router
